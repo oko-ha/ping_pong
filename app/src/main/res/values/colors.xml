@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainColor">#FF6667AB</color>
+    <color name="subColor1">#FF6B83C2</color>
+    <color name="subColor2">#FF6592B8</color>
+    <color name="subColor3">#FF816BC2</color>
+    <color name="subColor4">#FF9165B8</color>
+    <color name="subColor5">#FF9496F7</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name='red'>#FFFF0000</color>
+</resources>

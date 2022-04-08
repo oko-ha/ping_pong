@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/Image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/img_google_sign_up" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Contents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/Content1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/GoogleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:autoSizeMaxTextSize="24sp"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="구글 계정으로 간편하게 시작하세요!"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/GoogleSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnGoogleSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:autoSizeMaxTextSize="24sp"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/round_button"
+                        android:drawableStart="@drawable/google_resize"
+                        android:padding="10dp"
+                        android:text="구글 계정으로 시작하기" />
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:id="@+id/Line"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/mainColor" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/Content2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/EmailSignIn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnEmailSignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:autoSizeMaxTextSize="24sp"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/round_button"
+                        android:padding="10dp"
+                        android:text="이메일로 로그인" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/EmailSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnEmailSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:autoSizeMaxTextSize="24sp"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/round_button"
+                        android:padding="10dp"
+                        android:text="이메일로 가입" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/BottomMargin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="vertical" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
